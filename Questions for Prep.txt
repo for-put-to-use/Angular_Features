@@ -1,0 +1,41 @@
+when JIT and AOT in anguar are used
+
+how bootstrapping works in new angular apps where modules are not necessary
+
+in a module, declarations and providers both are injectable then when separation
+
+when change detection gets triggered (automatically)
+
+what is Zone.js
+
+explain routing
+
+how routing is iomplemented
+
+how nested routing done
+
+how params passed via routing
+
+how lazy loading done via routing
+
+how route guards work
+
+import statement in angular are promises?
+
+does import() only works for NgModules ?
+
+list all preloading strategies in angular
+
+lazy loading based on route guard
+
+how ngAfterViewInit and ngAfterViewChecked works with ViewChild and ViewChildren
+
+how ngAfterContentInit and ngAfterContentChecked works with content projection
+
+lazy loading conditional using if else condition inside loadChildren 's function
+ before returning the promise with module
+we can use APP_INITIALIZER also to load
+we can use custom CustomPreloadStrategy which checks for if else condition
+
+
+explain APP_INITIALIZER 

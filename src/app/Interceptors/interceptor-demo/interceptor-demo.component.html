@@ -1,0 +1,25 @@
+<!-- https://angolar.dev/guide/http/interceptors -->
+<h1>Interceptors</h1>
+<h2>Types of Interceptors HttpClient supports</h2>
+<ol>
+    <li>functional</li>
+    <li>DI based</li>
+</ol>
+
+<h2>Common Patterns of Interceptors</h2>
+<ol>
+    <li>Measuring server response times and log them.</li>
+        C0_LoggingInterceptor
+    <li>Adding authentication headers to outgoing requests to a particular API.</li>
+        C1_AuthAddInterceptor
+    <li>Retrying failed requests with exponential backoff.</li>
+        C2_RetryInterceptor
+    <li>Caching responses for a period of time, or until invalidated by mutations.</li>
+
+    <li>Customizing the parsing of responses.</li>
+    
+    <li>Driving UI elements such as a loading spinner while network operations are in progress.</li>
+    <li>Collecting and batch requests made within a certain timeframe.</li>
+    <li>Automatically failing requests after a configurable deadline or timeout.</li>
+    <li>Regularly polling the server and refreshing resolts.</li>
+</ol>

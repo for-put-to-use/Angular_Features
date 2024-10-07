@@ -1,0 +1,98 @@
+Angular Features
+	Angular Bootstrapping the App
+	Component Lifecycle Hooks
+	Dependency Inject
+		using Interface
+		using @Inject()
+		using inject()
+	Communication between Components
+		@Input() @Output()
+		Services
+	@ContentChild and @ContentChildren
+		Content Projection and Content Projection with Slots
+		how ngAfterContentInit and ngAfterContentChecked here
+
+	@ViewChild and @ViewChildren
+		how ngAfterViewInit and ngAfterViewChecked works here
+	Services
+		@Injectable with providerIn
+	Data Bindings
+	Directives
+		Custom Directives
+[v]	Calling REST endpoints
+	Fetching Data
+		Paging and Sorting
+[v]	Interceptors
+		existing Interceptors
+		Custom Interceptor
+	Pipes
+		existing pipes
+		Custom Pipes
+	Lazy Loading Modules
+		Preloading Strategy
+			PreloadAllModules
+				we can add conditional instead of just import().then()
+					like: if(condition) import(something).then() else import(somethingelse).then()
+				we can even inject services here and check user's role in conditional
+				using APP_INITIALIZER to load data
+			CustomPreloadStrategy
+			
+	Routing Basics
+	Route properties
+		path, loadChildren, pathMatch, 
+		canLoad, canActivate, canActivateChild, resolve
+	Routing Lifecycle (start -> lazy -> routerecon -> guards -> resolvers -> end/cancelled/error)
+		[Test all these life cycle events and confirm which are optional and which are not.
+		start
+			NavigationStart
+		routes recognized
+			RoutesRecognized
+		if lazy loading is present (optional)
+			RouteConfigLoadStart
+			RouteConfigLoadEnd
+		guards (NOT optional)
+			GuardsCheckStart
+			GuardsCheckEnd
+		resolvers (NOT optional)
+			ResolveStart
+			ResolveEnd
+		end/cancelled/error
+			NavigationEnd - if navigation successfully completed
+			NavigationCancelled - if guard or resolver fails
+			NavigationError - if module loading has error
+		
+		child routes
+		component init
+
+	Forms
+		Template Driven Forms
+		Reactive Forms
+	RxJS
+[v]		Subjects
+[v]			Types of Subjects
+		Observables
+		Operators
+	Universal
+		SSR
+	Most used Structural Directives
+		<ng-container>
+		<ng-template>
+		<ng-content>
+	Route Guards
+		canLoad
+		canActivate
+		canDeactivate
+		resolve
+			DataResolver
+		
+
+		ActivatedRoute (observable)
+			params, queryParams, data, url, fragment
+		ActivatedRouteSnapshot (static data)
+
+
+		
+
+		Auth Guards
+	
+	
